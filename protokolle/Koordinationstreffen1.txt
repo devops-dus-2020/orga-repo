@@ -88,6 +88,6 @@ man soll die Files den Autoren und Teams zuordnen können
 Passwörter:
 Mostafa erstellt neue Passwörter, schreibt sie in Canvas
 
-
+Bei Zugriff auf gemeinsame Ressourcen in WhatsApp Gruppe schreiben.
 
 
