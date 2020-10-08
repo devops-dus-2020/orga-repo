@@ -65,7 +65,7 @@ Credentials sollen nicht im Code stehen
 
 4. Shared Library
 morgen erste Ideen sammeln
-für externe dienste (git, docker, maven, tomcat)
+für externe dienste (git, docker, maven, tomcat, shell)
 getcredentials(type,id,username,password) methode in der sharedlibrary aufrufen
 shell-befehle in der sharedlibrary aufrufen können
 
