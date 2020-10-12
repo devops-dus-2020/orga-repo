@@ -1,15 +1,6 @@
 Koordinationstreffen
 12.10.2020 
 
-NACHTRAG / BERICHTIGUNGEN
-
-1. ORGA (wann, wo, wie lange, ...) Tools für Konfliktbehebung?
-2. Geteilte Projektstruktur
-3. Architektur
-4. Shared Library
-5. Zuständigkeiten
-6. Nomenklatur
-
 AGENDA
 
 1. Infrastruktur Setup
