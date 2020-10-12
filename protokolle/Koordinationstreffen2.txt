@@ -34,7 +34,7 @@ Außerhalb der Mittagspause ist Ruhe / Arbeitszeit im Raum (bitte rausgehen, wen
 4. Aufgabenverteilung
 BBROW legt Shared Library auf Daisy an.
 
-Kein gemeinsames Backlog für Pipeline, aber für Shared Library auf Trello (NginY legt Trello-Board an)
+Kein gemeinsames Backlog für Pipelines, aber für Shared Library auf Trello (NginY legt Trello-Board an)
 
 Dokumentation
 Features der Shared Library sollen in README.md der Shared Library dokumentiert werden, und im Code (Autor / Gruppe)
