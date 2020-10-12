@@ -1,0 +1,56 @@
+# Herunterladen der Source Jenkins Image, wo anschließend die weiteren Module installiert werden
+FROM jenkins/jenkins:lts-jdk11
+
+# Ausführung als root, um Berechtigungsprobleme vorzubeugen
+USER root
+
+# Update der vorhandenen Module, um anschließende Schwierigkeiten mit Installationen zu vermeiden
+RUN apt-get update && apt-get install -y && \
+  
+  # Installation von wget
+  apt-get install -y wget && \
+  
+  # Installation von Maven 3.6.3 via wget und Platzierung im richtigen Unterordner // Die heruntergelandene zip-Datei wird wieder am Ende entfernt
+  wget https://mirror.softaculous.com/apache/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip && \
+  unzip apache-maven-3.6.3-bin.zip && \
+  mv apache-maven-3.6.3 /usr/share/maven && \
+  rm apache-maven-3.6.3-bin.zip && \
+  
+  # sshpass ist notwendig für ssh Befehle in Ansible // optional, allerdings vielleicht für den einen oder anderen relevant
+  apt-get install sshpass && \
+  
+  # Installation von Python 3.7 und dem Pip Modul // wird für Ansible benötigt
+  apt-get install python3-pip -y && \
+  
+  # Ansible Installation in der aktuellsten Version
+  pip3 install ansible --upgrade && \
+  
+  # Docker SDK inkl. Docker CLI für Docker commands innerhalb von Jenkins
+  pip3 install docker && \
+  
+  # Installation von Docker-Compose // In diesem Fall als Python Modul, das wir zuvor installiert haben
+  pip3 install docker-compose && \
+  
+  # lxml ist relevant für die Ansible Galaxy Collection, um z.B. ein .war file von Nexus zu ziehen und zu deployen
+  pip3 install lxml && \
+  
+  # Angesprochene Ansible Plugins, die Ansible um zahlreiche Befehle z.B. für Maven erweitern
+  ansible-galaxy collection install community.general && \
+  
+  # Optionales Modul für Azure & Ansible, Funktion noch nicht getestet
+  ansible-galaxy install Azure.azure_preview_modules && \
+  pip3 install -r ~/.ansible/roles/Azure.azure_preview_modules/files/requirements-azure.txt && \
+  
+  # Letztes Update aller Pakete
+  apt-get upgrade -y && \
+  apt-get update
+
+# Ansible Configuration Datei wird hinzugefügt - Mit dieser können verschiedene Warnings beispielsweise ausgeschaltet werden
+COPY ansible/ansible.cfg etc/ansible/ansible.cfg
+
+# Definition des Maven Pfads und der maximalen Ressourcen von Jenkins & Java
+ENV MAVEN_HOME /usr/share/maven
+ENV M2_HOME /usr/share/maven
+ENV PATH $M2_HOME/bin/:$PATH
+ENV JAVA_OPTS="-Xmx8192m"
+ENV JENKINS_OPTS=" --handlerCountMax=300"
