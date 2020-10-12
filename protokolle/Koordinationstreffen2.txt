@@ -2,7 +2,6 @@ Koordinationstreffen
 12.10.2020 
 
 AGENDA
-
 1. Infrastruktur Setup
 2. Credentials
 3. Pausenzeiten
@@ -12,24 +11,28 @@ AGENDA
 Anwesend: 
 Andreas, Mostafa, Sebastian, Maik, Ray, Rainer
 
+
 1. Infrastruktur Setup
 Nicht genug Ressourcen auf Daisy, entweder stellt Johannes mehr zur Verfügung, oder wir müssen Jenkins entschlacken.
 Mostafa klärt das mit Johannes, sollte spätenstens ab morgen nutzbar sein
 
 mySQL fehlt noch
 
-Alte Dockerfile / docker-compose Dateien mit .back noch erhalten
+Alte Dockerfile / docker-compose Dateien als .bak noch erhalten
 
 Wir sprechen täglich im Aussschuss über Ressourcen, um zu sehen, ob sie noch ausreichen (wenn Teams z.B. extra Docker-Container starten)
 
+
 2. Credentials
-Schon hinterlegt im Jenkins, auch settings.xml mit Nexus und Tomcat-Server
+Schon hinterlegt im Jenkins, auch globale settings.xml für Nexus und Tomcat-Server
 Shared library 1x
 Webblog 5x muss jede Gruppe selber machen (credentials plugin)
+
 
 3. Pausenzeiten
 Sorgen um Lärmpegel. Mittagspause 12:30 - 13:30 Uhr.
 Außerhalb der Mittagspause ist Ruhe / Arbeitszeit im Raum (bitte rausgehen, wenn ihr Pause macht)
+
 
 4. Aufgabenverteilung
 BBROW legt Shared Library auf Daisy an.
@@ -40,7 +43,8 @@ Dokumentation
 Features der Shared Library sollen in README.md der Shared Library dokumentiert werden, und im Code (Autor / Gruppe)
 Credentials auf Canvas
 Andere Punkte in orga_repo unter Doku (z.B. Mostafas setup)
- 
+
+
 5. Shared Library
 TDD shared library?
 Generell, Funktionalität wichtiger als Unit-Test mit Stub, aber für alle notwendigen Pipelineschritte
