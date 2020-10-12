@@ -1,0 +1,68 @@
+# Verwendung der Version 2.1, da nach diesen Versionen der "group_add" Befehl bei Jenkins nicht mehr funktioniert
+version: "2.1"
+
+# Definition des verwendeten Docker Netzwerks - in diesem Fall haben wir bereits ein Netzwerk namens "Tools", das die gestarten Container verwenden
+networks:
+  tools:
+    external:
+      name: tools
+
+# Erstellung/Nutzung von Volumes für Jenkins & Nexus, damit unsere Daten gespeichert bleiben
+volumes:
+  jenkins_home:
+    name: jenkins_home
+  nexus-data:
+    name: nexus-data
+
+# Bestimmung der zu startenden Container
+services:
+
+# Jenkins wird ähnlich zu dem Bekannten "docker run --name jenkins -v /var/run/docker.sock:/var/run/docker.sock --group-add=$(stat -c %g /var/run/docker.sock)..." gestartet
+  jenkins:
+    build: jenkins
+    container_name: jenkins
+    ports:
+      - 8081:8080
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - /usr/bin/docker:/usr/bin/docker
+      - /var/run/docker.sock:/var/run/docker.sock
+    group_add:
+      - 133
+    networks:
+      - tools
+ 
+ # Die restlichen Container sollten selbsterklärend sein
+  tomcat:
+    build: tomcat
+    container_name: tomcat
+    ports:
+      - 8082:8080
+    networks:
+      - tools
+  nexus:
+    image: sonatype/nexus3:latest
+    container_name: nexus
+    ports:
+      - 8083:8081
+    networks:
+      - tools
+    volumes:
+      - nexus-data:/nexus-data
+  sonarqube:
+    image: sonarqube:latest
+    container_name: sonarqube
+    ports:
+      - 8084:9000
+    networks:
+      - tools
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_USER=root
+    ports:
+    - 8085:3306
+    networks:
+      - tools
