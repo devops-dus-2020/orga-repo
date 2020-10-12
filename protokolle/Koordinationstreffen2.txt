@@ -7,7 +7,7 @@ AGENDA
 2. Credentials
 3. Pausenzeiten
 4. Aufgabenverteilung
-5. Share Library
+5. Shared Library
 
 Anwesend: 
 Andreas, Mostafa, Sebastian, Maik, Ray, Rainer
