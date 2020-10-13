@@ -1,0 +1,19 @@
+Hier der Ausschnitt aus unserem Jenkinsfile:
+
+pipeline {
+    agent any
+    environment{
+        POMPATH = '/var/jenkins_home/workspace/BBROW/pom.xml'
+    }
+    stages {
+        stage('mvn compile') {
+            steps {
+                script {
+                    
+                    infincompile.compile(POMPATH) 
+                    
+                }
+            }
+        }
+        
+  ersetzt einfach den Pfad unter POMPATH durch euren, dann sollte maven compile laufen
