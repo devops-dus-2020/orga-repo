@@ -1,0 +1,28 @@
+Shared Library:
+
+- Bastis Team Bibliothek funktioniert lokal super, in Jenkins wird es nicht gefunden
+- Andreas Team kann vars File ausrufen, wissen aber nicht, ob es etwas macht
+- Mostafas Team hat es mit vars File zum laufen bekommen, hat aber Schwierigkeiten mit der Implementierung & Test
+- Rays Team hat eine Architektur erstellt, bekommen compile Schritt über lokal probiert - klappt - wollen als nächstes das compile durch das Interface schicken
+- Maiks Team hat erst Probleme mit den Aufrufen im Jenkinsfile - sonst das selbe wie bei Bastis Team - Aufruf bei Jenkins funktioniert nicht
+- Alle arbeiten bisher lokal - außer Mikes Team (testen mit Mickey)
+
+- Kommunikation über Remote: Nicht immer alles gut zu verstehen
+
+Gedanken:
+
+- Besser möglichst früh mit Mickey zu arbeiten - auch auf Empfehlung von Johannes
+- Unklar, ob jemand eine funktioniernde Methode hat
+- Bei Andreas Team könnte es funktionieren - keine Fehlermeldungen bisher (lokal) - wird gepusht auf die Shared Library 
+- Nach dem Mittag nochmal treffen um zu bestimmen ob es geklappt hat - danach sollten Pakete zwischen den Teams verteilt werden
+- Morgen evtl. der Maven Lifecycle
+- Basti hat eine config, wo mvn Befehle flexibel gemappt werden können
+- Ende der ersten Session: 12:35 Uhr -> geht weiter um 13:45 Uhr
+
+Session 2:
+
+- Erste Schritte gemacht, Maven funktioniert, in produktiver Umgebung läuft die shared Library (mit Andreas Entwurf)
+- Nicht sicher, ob der compile tatsächlich funktioniert - kein target Ordner wurde erstellt (bei compile wird normalerweise target/classes erstellt)
+- "Prototype" besteht - wie machen wir weiter?
+- Scheinbar funktionierender Logger für "mvn -v" & "mvn compile"
+- Morgen um 9 Uhr geht es weiter - Bastis Team arbeitet an der Config für verschiedene Szenarios - Maiks Team am Logger
