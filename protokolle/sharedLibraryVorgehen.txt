@@ -1,1 +1,2 @@
-Jeder der bearbeiten möchte klont von devops-dus-2020/sharedLibraryJenkins und erstellt einen Feature Branch.
+Jeder der bearbeiten möchte, klont von devops-dus-2020/sharedLibraryJenkins und erstellt einen Feature Branch.
+
