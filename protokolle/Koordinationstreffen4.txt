@@ -64,4 +64,15 @@ Info an Johannes: morgen Streik ÖPNV, Schlüssel hat Andreas. Frühstens 0830 i
 5. excecute.txt ?
 
 
+Anworten aus remote-session mit Johannes:
 
+1. Johannes hat kein Wissen einer Restriktion. Wenn doch eine existieren sollte, kann er sich lediglich eine Reduzierung auf commits/Tag vorstellen.
+
+2. Man sollte sich nicht darauf verlassen, dass Dateien persistent gespeichert werden. Sollte man dies wünschen, muss dies explizit angewiesen werden. Das compile am besten innerhalb des packages wiederholen.
+
+3./5. execute hat als Rückgabewert einen Prozess, der wieder verschwindet nach Ausführung. Deshalb innerhalb des Prozesses in eine Variable schreiben und diese dann auswerten.
+process.exitValue()
+Jenkins geht davon aus, dass alles mit Rückgabewert 0 ok ist, ein Prozess wird wahrscheinlich so interpretiert.
+
+Verwendung von serializable als extent in Klassen?
+serializable verwandelt die Infos in ASCII-Code, den man anschließend zur Auswertung weiterleiten kann. J. kann sich nicht vorstellen, dass wir das brauchen.
