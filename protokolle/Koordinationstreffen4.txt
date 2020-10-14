@@ -1,27 +1,28 @@
 Agenda:
-1. Struktur Shared Library
-2. Arbeitspakete Shared Library
-3. Abgrenzung Pflicht/Option
-4. Disziplin
-5. Nutzung von Johannes Sessions
-6. Mickey Nutzung WahtsAppGruppe
+1. Disziplin
+2. Nutzung von Johannes Sessions
+3. Mickey Nutzung WahtsAppGruppe
+4. Struktur Shared Library
+5. Abgrenzung Pflicht/Option
+6. Arbeitspakete Shared Library
+
 
 
 
 
 1. Disziplin
 Andreas bemängelt Unpünktlichkeit zu den Besprechungen.
-Meeting Links werden in der WahtsApp AWDevOps Academy mindestens 15 min vor der Besprechung
+Meeting Links werden in der WhatsApp AWDevOps Academy mindestens 15 min vor der Besprechung
 
 2. Nutzung von Johannes Sessions
 Vorschlag von Andreas: Der Aussschuss bekommt zunächst eine Session mit Johannes um überschneidende Fragen zu klären.
 Jedes Team gibt 15 Minuten ab.
 Vorschlag wird angenommen.
 
-3. Mickey Nutzung WahtsAppGruppe
-Mickey wird langsamer. Viele Jobs laufen parrallel durch Webhoks
+3. Mickey Nutzung WhatsAppGruppe
+Mickey wird langsamer. Viele Jobs laufen parallel durch Webhooks
 Beschluss: Webhooks werden bis auf weiters wieder ausgebaut.
-WahtsApp Gruppe ABProjekt Mickey wird genutzt um Bescheid zu sagen wenn man auf Mickey arbeitet.
+WhatsApp Gruppe ABProjekt Mickey wird genutzt um Bescheid zu sagen wenn man auf Mickey arbeitet.
 
 4. Struktur Shared Library
 Andreas schlägt vor die Klassen in der Shared Library nach ihrer Funktion zu benennen:
@@ -36,7 +37,7 @@ Siehe Grafik
 Maven Lifecycle ist Pflicht
 
 6. Arbeitspakete Shared Library
-Teams arbeiten nacheinader den Maven Lifecycle ab.
+Teams arbeiten nacheinander den Maven Lifecycle ab.
 
 INFIN beginnt das Design Pattern mit MVN Compile umzusetzen.
 BBROW folgt mit MVN Test
@@ -49,7 +50,7 @@ GRYNS MVN Deploy to Nexus
  TODO sicherstellen dass ArtefakteID Konvention entspricht
 
 
-
+Ausschuss spricht mit Johannes um 12 Uhr
 Nächstes Treffen nach der Remote Session ist um 1600 Uhr
 
 
@@ -57,7 +58,11 @@ Gemeinsame Fragen an Johannes:
 Info an Johannes: morgen Streik ÖPNV, Schlüssel hat Andreas. Frühstens 0830 im Allynet
 
 1. Max Anzahl Commits auf GitHub 2000 ?
+<<<<<<< HEAD
 2. Werden die Artefakte in einer Bulid Stage peristent abgelegt oder nur getestest ob kompiliert wird.
+=======
+2. Werden die Artefakte in einer Build Stage peristent abgelegt oder nur getestet oder nur getestest ob kompiliert wird.
+>>>>>>> d6a7360f28e2d47fffcb738b7f857f6b279f07df
 3. Grüne Pipeline wenn compile fehlschägt ?
 4. kubectl auf Mickey Wo?
 5. excecute.txt ?
