@@ -1,10 +1,11 @@
 Agenda:
-1. Struktur Shared Library
-2. Arbeitspakete Shared Library
-3. Abgrenzung Pflicht/Option
-4. Disziplin
-5. Nutzung von Johannes Sessions
-6. Mickey Nutzung WahtsAppGruppe
+1. Disziplin
+2. Nutzung von Johannes Sessions
+3. Mickey Nutzung WahtsAppGruppe
+4. Struktur Shared Library
+5. Abgrenzung Pflicht/Option
+6. Arbeitspakete Shared Library
+
 
 
 
