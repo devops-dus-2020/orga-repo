@@ -1,0 +1,61 @@
+Agenda:
+1. Struktur Shared Library
+2. Arbeitspakete Shared Library
+3. Abgrenzung Pflicht/Option
+4. Disziplin
+5. Nutzung von Johannes Sessions
+6. Mickey Nutzung WahtsAppGruppe
+
+
+
+
+1. Disziplin
+Andreas bemängelt Unpünktlichkeit zu den Besprechungen.
+Meeting Links werden in der WahtsApp AWDevOps Academy mindestens 15 min vor der Besprechung
+
+2. Nutzung von Johannes Sessions
+Vorschlag von Andreas: Der Aussschuss bekommt zunächst eine Session mit Johannes um überschneidende Fragen zu klären.
+Jedes Team gibt 15 Minuten ab.
+Vorschlag wird angenommen.
+
+3. Mickey Nutzung WahtsAppGruppe
+Mickey wird langsamer. Viele Jobs laufen parrallel durch Webhoks
+Beschluss: Webhooks werden bis auf weiters wieder ausgebaut.
+WahtsApp Gruppe ABProjekt Mickey wird genutzt um Bescheid zu sagen wenn man auf Mickey arbeitet.
+
+4. Struktur Shared Library
+Andreas schlägt vor die Klassen in der Shared Library nach ihrer Funktion zu benennen:
+z.B. statt vars/infincompile.groovy vars/mvn.groovy
+damit im Jenkinsfile dann z.B. mvn.compile(...) aufgerufen werden kann.
+src/de/devopsdus2020/....
+
+Definition von core und external
+Siehe Grafik
+
+5. Abgrenzung Pflicht/Option
+Maven Lifecycle ist Pflicht
+
+6. Arbeitspakete Shared Library
+Teams arbeiten nacheinader den Maven Lifecycle ab.
+
+INFIN beginnt das Design Pattern mit MVN Compile umzusetzen.
+BBROW folgt mit MVN Test
+NGINY Sonarqube
+SCSLS MVN Package
+GRYNS MVN Deploy to Nexus
+
+
+
+ TODO sicherstellen dass ArtefakteID Konvention entspricht
+
+
+
+Nächstes Treffen nach der Remote Session ist um 1600 Uhr
+
+
+Gemeinsame Fragen an Johannes:
+1. Max Anzahl Commits auf GitHub 2000 ?
+2. Werden die Artefakte in einer Bulid Stage peristent abgelegt oder nur geteste oder nur getestest ob kompiliert wird.
+3. Grüne Pipeline wenn compile fehlschägt ?
+4. Cubectl auf Mickey Wo?
+
