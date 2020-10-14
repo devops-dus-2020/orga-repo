@@ -54,8 +54,13 @@ Nächstes Treffen nach der Remote Session ist um 1600 Uhr
 
 
 Gemeinsame Fragen an Johannes:
+Info an Johannes: morgen Streik ÖPNV, Schlüssel hat Andreas. Frühstens 0830 im Allynet
+
 1. Max Anzahl Commits auf GitHub 2000 ?
-2. Werden die Artefakte in einer Bulid Stage peristent abgelegt oder nur geteste oder nur getestest ob kompiliert wird.
+2. Werden die Artefakte in einer Bulid Stage peristent abgelegt oder nur getestest ob kompiliert wird.
 3. Grüne Pipeline wenn compile fehlschägt ?
-4. Cubectl auf Mickey Wo?
+4. kubectl auf Mickey Wo?
+5. excecute.txt ?
+
+
 
