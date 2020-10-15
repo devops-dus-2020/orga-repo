@@ -1,0 +1,68 @@
+Agenda: 
+
+Deploy & ConvertvalueString umarbeiten
+Arbeitsmentalität
+Add fields Problem
+Logger
+Config -> Maven
+Gemeinsames Trello Board
+Gruppengründung für die Koordination der Präsentation
+Arbeiten an der shared Library
+
+
+Arbeiten an der sharedlibrary:
+
+Alle sollten in (Feature-)Branches arbeiten
+Global Shared Library rausnehmen und in den jeweiligen Jobs die eigene shared Library hinterlegen und damit arbeiten
+
+Gruppengründung:
+
+Noch nicht hier besprechen, eigenen Termin nochmal dafür finden
+Morgen um 12 Uhr Präsentations-Meeting
+
+Gemeinsames Trello Board:
+
+Wurde erstellt, noch nicht benutzt
+Auflösen oder nicht? -> Entfernen, haben genug Doku mit Gremium und Repo Orga
+
+Arbeitsmentalität:
+
+Wenn man nicht weiterkommt, frühzeitig melden und Bescheid geben -> verlieren sonst viel Zeit
+Pakete rechtzeitig weitergeben -> womöglich nicht direkt nach Feierabend
+Über den Tag hinweg Projekte öfter pullt, um up-to-date zu sein
+Dokumentieren bei fundamentalen Änderungen, damit das alle nachvollziehen können
+
+=> Häufiger sich austauschen, früh genug um Unterstützung bitten
+
+
+Deploy & ConvertvalueString umarbeiten:
+
+Aktuelles Problem: Credentials und settings.xml werden nicht übergeben -> Überarbeitung unserer Library notwendig?
+Nutzung von Keys -> Optionen/Flags?
+MAVEN_ARGS Implementierung -> Nexus Deploy Gruppe probiert es aus
+
+
+Config:
+
+Unit Tests einführen
+Hängt mit dem Deploy Problem zusammen
+
+
+Logger:
+
+Innerhalb von Maven Service integrieren -> für compile wurde das schon getestet
+Problem: Müsste überall geändert werden -> auf maven branch zu sehen
+Andreas Team übernimmt das
+
+
+Add fields Problem:
+
+Steht noch im Raum, wird am Nachmittag weiterbehandelt
+Erste Vorschläge von Johannes
+
+
+Sonstiges:
+
+Implementierung eines Ansible Service // Bastis Team arbeitet an einem Docker Service
+mvn install Implementierung? Keine Notwendigkeit
+
