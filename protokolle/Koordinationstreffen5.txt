@@ -63,6 +63,6 @@ Erste Vorschläge von Johannes
 
 Sonstiges:
 
-Implementierung eines Ansible Service // Bastis Team arbeitet an einem Docker Service
+Implementierung eines Ansible Service (BBROW)// Bastis Team arbeitet an einem Docker Service
 mvn install Implementierung? Keine Notwendigkeit
 
