@@ -8,12 +8,12 @@ Agenda:
 
 
 1. Pipeline
-Pipeline findet die POM.xml -> Andreas arbeitet dran
+Pipeline findet die POM.xml nicht -> Andreas arbeitet dran
 Test ob Umgebungsvariable ein String. Andreas hat den Test rausgenommen, jetzt funktioniert die Pipeline wieder
-Tromdem Pipeline grün
+Trotzdem Pipeline grün
 
 2. Tomcat Container
-NGINY hat sich angefangen damit auseinanderzusetzten
+NGINY hat angefangen, sich damit auseinanderzusetzten
 Im Container ist kein Editor installiert. 
 NGINY benennt die server.xml 
 Eine Möglchkeit: über Docker copy / docker compose
@@ -30,7 +30,7 @@ withCredentials ist im script integriert
 
 5. Hinweise im Code
 Readme sieht sehr gut aus 
-Bei großen Änderungen gerne noch kleine Hinweise im Code zu Funktion 
+Bei großen Änderungen gerne noch kleine Hinweise im Code zur Funktion 
 
 
 
