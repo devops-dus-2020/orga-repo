@@ -66,3 +66,5 @@ Sonstiges:
 Implementierung eines Ansible Service (BBROW)// Bastis Team arbeitet an einem Docker Service
 mvn install Implementierung? Keine Notwendigkeit
 
+
+
