@@ -1,0 +1,35 @@
+Varianten für Aufbau der Präsentation:
+1. Bilden einer 6. Gruppe zur Präsentation der gemeinsamen Arbeit bestehend aus je einem Gruppenmitglied, restliche Präsentationen werden entsprechend gekürzt
+2. Jede Gruppe hat in ihrer Präsentation einen Teil shared library (50% -2/3) und einen Teil individuell
+
+Einigung auf 2.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Themen für Präsentation shared library
+Organisation der Arbeit
+- Ordnerstruktur in shared library
+- Ausschussarbeit und Kommunikation
+
+shared library
+- maven-service bis verify
+- maven-service ab deploy/Nexus/Credentials
+- docker-service
+- ansible-service
+- Aufsetzen der Serverlandschaft
+
+------------------------------------------------------------------------------------------------------------------------
+
+Ideen für individuelle Themen
+- Kubernetes
+- Metriken
+- Login
+- Sonarqube
+
+------------------------------------------------------------------------------------------------------------------------
+
+nächster Termin: Mo, 14 Uhr
+
+Bis dahin:
+- evtl. Themen ergänzen - gleich hier in der Liste
+- jede Gruppe wählt ihre Favoriten, damit wir Montag Themen verteilen können
