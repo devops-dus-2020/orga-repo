@@ -1,0 +1,30 @@
+Agenda:
+
+Teilnehmer: Maik, Mostafa, Andreas, Ray und Sebastian
+
+1. Namenkonvention innerhalb der SharedLibrary
+2. Tomcat Problematik
+3. Organisation fuer Graduation Day
+
+
+1. Andreas bittet darum, dass innerhalb der SharedLibrary die zu verwendeten 
+Parameter korrekt benannt werden, damit auch die Leserlichkeit des Codes
+fuer Aussenstehende vorhanden ist. Aenderungen am Code werden in Folge von
+Andreas vorgenommen.
+
+2. Ein Deployment der SpringBootApplication kann noch immer nicht 
+mit Hilfe SharedLibrary erfolgen. Eine Beobachtung der Prozesscodes
+hat auch bisher zu keinem Erfolg gefuehrt. Andreas und Sebastian
+vermuten, dass sowohl nicht ausreichend Rechte fuer Jenkins auf
+dem Tomcat vorliegen als auch die Anweisungen von Jenkins aus der Groovy
+SharedLib nicht korrekt interpretiert werden.
+
+3. Maik spricht die Planung fuer den Graduation Day an. Sebastian erklaert
+sich bereit mit Frau Kamke zu sprechen, ob ein Vertrag mit einem Catering 
+vorliegt, welcher fuer Veranstaltungen im Allynet verwendet werden muss.
+Frau Kamke war heute nicht anzutreffen, Sebastian schreibt eine e-Mail an
+Caro. Derzeit liegt der Vorschlag von Karina auf dem Tisch fuer den Graduation
+Day: Essen bestellen und Getraenke selbst bei Aldi oder Rewe besorgen.
+Ob jemand ein Hotelzimmer fuer den Freitag noch nimmt, muss jeder fuer sich 
+selbst entscheiden. Allerdings weist Maik auf eventuelle Quarantaeneproblematiken hin
+fuer die Heimkehrer in der folgenden Woche.
