@@ -1,0 +1,53 @@
+Protokoll 20.10.2020
+12:00
+
+Anwesende:
+Andreas, Mostafa, Karina, Maik, Ray
+
+Agenda:
+
+Dokumentation
+Tomcat Deploy
+Exit Value
+Metriken & Logging
+Ansible Service
+Container Remove
+
+1. Dokumentation
+
+Neue Features müssen dokumentiert werden,
+Vorschlag: Neues Feature der Gruppe präsentieren
+wünschenswert auch: README file verbessern, Code-Beispiele hinzufügen
+z.B. Ansible Service, Metriken
+um 15 Uhr wird Ansible Service präsentiert
+15:30 Metriken
+Teams verbessern/ergänzen die REAME Datei
+
+2. Tomcat Deploy
+Curl Befehl kann pullen, deploy:deploy zu kompliziert, lieber mit Curl auch versuchen zu deployen
+mvn Tomcat Deploy
+shell Befehl erzeugt es auch Neu
+Ansible Lösung funktioniert (durch Verschieben von Files), 
+läuft nicht übern Manager, Johannes sagt, man soll das Deployen über den Manager machen
+
+3. Exit Value
+Immer noch das Grün-Problem (Pipeline funktioniert nicht, trotzdem grün)
+Jenkins Pipeline erkennt offenbar doch nicht den Exit Value
+Andreas hat Methode erzeugt, die einen error erzeugt -> den erkennt Jenkins
+(if exitvalue!= 0 -> error)
+
+4. Metriken & Logging
+geklärt
+
+5. Ansible Service
+geklärt
+
+6. Container Remove
+Micky ist sehr langsam, GB an Daten durch nicht aufgeräumte Images, wurde kürzlich aufgeräumt,
+bitte alle darauf achten, regelmäßig aufzuräumen
+
+7. Deadline für Master-Merges
+Vorschlag, Zeitpunkt zu vereinbaren, an dem nicht mehr gemergt wird, damit das abgeschlossen ist, und man sich
+auf die Präsentation konzentrieren kann
+Derzeit wird noch an den war-files gearbeitet
+Wird aber abgelehnt, da Arbeit an feature-Branches
