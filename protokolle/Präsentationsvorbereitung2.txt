@@ -1,0 +1,5 @@
+	1. Gryns: Serverlandschaft, gemeinsames Produkt, Metriken
+	2. Ray, Rainer, Indu: Designpattern
+	3. Andreas:  Grundimplementierung Designpattern
+	4. Scrum: Credentials
+BBROWS: Implementierung Ansible, Freitag Impediment
